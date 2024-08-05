@@ -5,6 +5,7 @@ const auth = (req, res, next) => {
   // routes which donot require token
 
   const excludePath = [
+    "/check",
     "/api/auth/login",
     "/api/auth/signup",
     "/api/auth/verify-otp",
