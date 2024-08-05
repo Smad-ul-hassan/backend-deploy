@@ -1,0 +1,34 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+const JWT_SECERET = process.env.JWT_SECERET;
+const DATABASE_URL = process.env.DATABASE_URL;
+const PORT = process.env.PORT;
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const COMPANY_EMAIL = process.env.COMPANY_EMAIL;
+const TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
+const TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN;
+const TWILIO_PHONE_NUMBER = process.env.TWILIO_PHONE_NUMBER;
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASS = process.env.ADMIN_PASS;
+const NODEMAILER_EMAIL = process.env.EMAIL;
+const NODEMAILER_PASSWORD = process.env.PASSWORD;
+const FRONTEND_URL_WEB = process.env.FRONTEND_URL_WEB;
+const FRONTEND_URL_ADMIN = process.env.FRONTEND_URL_ADMIN;
+
+export {
+  PORT,
+  JWT_SECERET,
+  DATABASE_URL,
+  GOOGLE_CLIENT_ID,
+  COMPANY_EMAIL,
+  TWILIO_ACCOUNT_SID,
+  TWILIO_AUTH_TOKEN,
+  TWILIO_PHONE_NUMBER,
+  ADMIN_EMAIL,
+  ADMIN_PASS,
+  NODEMAILER_EMAIL,
+  NODEMAILER_PASSWORD,
+  FRONTEND_URL_WEB,
+  FRONTEND_URL_ADMIN,
+};

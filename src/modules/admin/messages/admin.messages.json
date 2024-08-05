@@ -1,0 +1,27 @@
+{
+    "13000": {
+        "msg": {
+            "en": "Admin logged in successfully"
+        }
+    },
+    "13001": {
+        "msg": {
+            "en": "All user's count found successfully"
+        }
+    },
+    "13002": {
+        "msg": {
+            "en": "All medallion's count found successfully"
+        }
+    },
+    "13003": {
+        "msg": {
+            "en": "Users found successfully"
+        }
+    },
+    "13004": {
+        "msg": {
+            "en": "Users status updated successfully"
+        }
+    }
+}

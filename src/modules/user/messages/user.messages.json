@@ -1,0 +1,91 @@
+{
+    "12000": {
+        "msg": {
+            "en": "User logged in successfully"
+        }
+    },
+    "12001": {
+        "msg": {
+            "en": "User Created Successfully"
+        }
+    },
+    "12002": {
+        "msg": {
+            "en": "Password updated Successfully"
+        }
+    },
+    "12003": {
+        "msg": {
+            "en": "OTP sent successfully!"
+        }
+    },
+    "12004": {
+        "msg": {
+            "en": "OTP verified successfully"
+        }
+    },
+    "12005": {
+        "msg": {
+            "en": "Reset password link has been sent to your email"
+        }
+    },"12006": {
+        "msg": {
+            "en": "Link verified successfully"
+        }
+    },
+    "12007": {
+        "msg": {
+            "en": "Password reset successfully"
+        }
+    },
+    "12008": {
+        "msg": {
+            "en": "Medallion assigned successfully"
+        }
+    },
+    "12009": {
+        "msg": {
+            "en": "Data added successfully"
+        }
+    },
+    "12010": {
+        "msg": {
+            "en": "Data update successfully"
+        }
+    },
+    "12011": {
+        "msg": {
+            "en": "Medallion found successfully"
+        }
+    },
+    "12012": {
+        "msg": {
+            "en": "User updated successfully"
+        }
+    },
+    "12013": {
+        "msg": {
+            "en": "Medallions found successfully"
+        }
+    },
+    "12014": {
+        "msg": {
+            "en": "Medallions deleted successfully"
+        }
+    },
+    "12015": {
+        "msg": {
+            "en": "Memory Wall Found successfully"
+        }
+    },
+    "12016": {
+        "msg": {
+            "en": "Memory Wall Status updated successfully"
+        }
+    },
+    "12017": {
+        "msg": {
+            "en": "Review added successfully"
+        }
+    }
+}

@@ -1,0 +1,119 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // uses connection pooling
+  // directUrl = env("DATABASE_URL") // uses a direct connection
+  // directUrl = env("DATABASE_URL_NON_POOL") // uses a direct connection
+}
+
+model User {
+  userId         String           @id @default(uuid()) @map("user_id")
+  name           String
+  email          String           @unique
+  password       String?
+  phone          String?
+  image          String?
+  role           String           @default("user")
+  isActive       Boolean?         @default(true)
+  Medallion      Medallion[]
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @default(now()) @updatedAt @map("updated_at")
+  deletedAt      DateTime?        @map("deleted_at")
+  ShippingDetail ShippingDetail[]
+
+  @@map("users")
+}
+
+model Medallion {
+  medallionId String    @id @unique @default(uuid()) @map("medallion_id")
+  value       String
+  usedAt      DateTime? @map("used_at")
+  type        String?
+  validTill   DateTime? @map("valid_till")
+  user        User?     @relation(fields: [userId], references: [userId], onDelete: Cascade)
+  userId      String?   @map("user_id")
+  tribute     Tribute?  @relation(fields: [tributeId], references: [tributeId], onDelete: Cascade)
+  tributeId   String?   @unique @map("tribute_id")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt   DateTime? @map("deleted_at")
+
+  @@map("medallions")
+}
+
+model Tribute {
+  tributeId         String       @id @unique @default(uuid())
+  medallionId       String
+  tributeImage      Json?        @map("tribute_image")
+  coverImage        String?      @map("cover_image")
+  personImaage      Json?        @map("person_image")
+  firstName         String?      @map("first_name")
+  lastName          String?      @map("last_name")
+  birthDate         String?      @map("birth_date")
+  deathDate         String?      @map("death_date")
+  lastLocation      String?      @map("last_location")
+  heading           String?
+  headingStatus     Boolean?     @default(true) @map("heading_status")
+  eurology          String?
+  eurologyStatus    Boolean?     @default(true) @map("eurology_status")
+  images            Json[]
+  imagesStatus      Boolean?     @default(true) @map("images_status")
+  videos            Json[]
+  videosStatus      Boolean?     @default(true) @map("videos_staus")
+  memoryWalls       String?      @map("memory_walls")
+  memoryWallsStatus Boolean?     @default(true) @map("memory_walls_status")
+  memoryWallMode    String?      @default("Post mode")
+  donation          Json?
+  donationStatus    Boolean?     @default(true) @map("donation_status")
+  timeLine          Json[]       @map("time_line")
+  timeLineStatus    Boolean?     @default(true) @map("timi_line_status")
+  Medallion         Medallion?
+  createdAt         DateTime     @default(now()) @map("created_at")
+  updatedAt         DateTime     @default(now()) @updatedAt @map("updated_at")
+  deletedAt         DateTime?    @map("deleted_at")
+  memoryWall        memoryWall[]
+
+  @@map("tributes")
+}
+
+model memoryWall {
+  memoryWallId String    @id @unique @default(uuid())
+  email        String?
+  status       Boolean   @default(true)
+  review       String?
+  images       String?
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt    DateTime? @map("deleted_at")
+
+  tribute   Tribute @relation(fields: [tributeId], references: [tributeId], onDelete: Cascade)
+  tributeId String  @map("tribute_id")
+}
+
+model ProductPrice {
+  id                     String @id @unique @default(uuid())
+  price                  Int?
+  yearlySubscription     Int?
+  threeYearsSubscription Int?
+  fiveYearsSubscription  Int?
+}
+
+model ShippingDetail {
+  id         String    @id @unique @default(uuid())
+  userId     String    @map("user_id")
+  user       User      @relation(fields: [userId], references: [userId], onDelete: Cascade)
+  medallions Json?
+  metadata   Json?
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt  DateTime? @map("deleted_at")
+}

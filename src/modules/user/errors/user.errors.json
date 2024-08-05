@@ -1,0 +1,188 @@
+{
+    "5000": {
+        "msg": {
+            "en": "unauthorised"
+        }
+    },
+    "5001": {
+        "msg": {
+            "en": "Please provide a google token to continue"
+        }
+    },
+    "5002": {
+        "msg": {
+            "en": "Email does not exist"
+        }
+    },
+    "5003": {
+        "msg": {
+            "en": "Please provide proper password"
+        }
+    },
+    "5004": {
+        "msg": {
+            "en": "Server Error"
+        }
+    },
+    "5005": {
+        "msg": {
+            "en": "Please provide a apple Id to continue"
+        }
+    },
+    "5006": {
+        "msg": {
+            "en": "User Already exist"
+        }
+    },
+    "5007": {
+        "msg": {
+            "en": "User Created SuccessFully"
+        }
+    },
+    "5008": {
+        "msg": {
+            "en": "Password must contain atleast 4 characters"
+        }
+    },
+    "5009": {
+        "msg": {
+            "en": "Email is required"
+        }
+    },
+    "5010": {
+        "msg": {
+            "en": "Please provide a valid email"
+        }
+    },
+    "5011": {
+        "msg": {
+            "en": "Invalid Password"
+        }
+    },
+    "5012": {
+        "msg": {
+            "en": "Singin sucessfully"
+        }
+    },
+    "5013": {
+        "msg": {
+            "en": "Password updated successfully"
+        }
+    },
+    "5014": {
+        "msg": {
+            "en": "User does,nt exist"
+        }
+    },
+    "5015": {
+        "msg": {
+            "en": "Invalid Google Token"
+        }
+    },
+    "5016": {
+        "msg": {
+            "en": "Invalid Token"
+        }
+    },
+    "5017": {
+        "msg": {
+            "en": "Please login using google as you have already created an account using google"
+        }
+    },
+    "5018": {
+        "msg": {
+            "en": "Please login using apple as you have already created an account using apple"
+        }
+    },
+    "5019": {
+        "msg": {
+            "en": "invalid Apple Token"
+        }
+    },
+    "5020": {
+        "msg": {
+            "en": "Name should be minimum of two letters"
+        }
+    },
+    "5021": {
+        "msg": {
+            "en": "Invalid OTP, Please try again"
+        }
+    },
+    "5022": {
+        "msg": {
+            "en": "Phone Number is required"
+        }
+    },
+    "5023": {
+        "msg": {
+            "en": "Please provide a valid phone number"
+        }
+    },
+    "5024": {
+        "msg": {
+            "en": "OTP is required"
+        }
+    },
+    "5025": {
+        "msg": {
+            "en": "OTP must be a number"
+        }
+    },
+    "5026": {
+        "msg": {
+            "en": "Please provide a proper name"
+        }
+    },
+    "5027": {
+        "msg": {
+            "en": "Error while sending password reset link"
+        }
+    }
+    ,"5028": {
+        "msg": {
+            "en": "Token is required"
+        }
+    }
+    ,"5029": {
+        "msg": {
+            "en": "Reset password link expired, please try again."
+        }
+    },
+    "5030": {
+        "msg": {
+            "en": "Invalid link, please try again."
+        }
+    },"5031": {
+        "msg": {
+            "en": "Phone no is required"
+        }
+    },"5032": {
+        "msg": {
+            "en": "Please provide a valid phone number"
+        }
+    },"5033": {
+        "msg": {
+            "en": "Role is required"
+    },
+    "5034": {
+        "msg": {
+            "en": "Role must be either admin or user"
+        }
+    },
+    "5035": {
+        "msg": {
+            "en": "Something went wrong, please try again."
+        }
+    },
+    "5036": {
+        "msg": {
+            "en": "Invalid data set"
+        }
+    },
+    "5037": {
+        "msg": {
+            "en": "Invalid medallion id"
+        }
+    }
+    }}

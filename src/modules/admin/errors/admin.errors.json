@@ -1,0 +1,17 @@
+{
+    "6000": {
+        "msg": {
+            "en": "unauthorised"
+        }
+    },
+    "6001": {
+        "msg": {
+            "en": "Server Error"
+        }
+    },
+    "6002": {
+        "msg": {
+            "en": "Something went wrong, Please try again later"
+        }
+    }
+}
