@@ -32,10 +32,10 @@ app.use(
   })
 );
 app.use("*", paggination);
-app.use("*", auth);
 app.get("/api", (req, res) => {
   res.send({ status: "Server is running 🚀🚀" });
 });
+app.use("*", auth);
 
 app.use("/api/auth", userRouter);
 app.use("/api/user", userRouter);
